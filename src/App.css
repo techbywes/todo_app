@@ -7,14 +7,31 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #00b4d8c5;
+  background-image: linear-gradient(
+    109.6deg,
+    rgb(30, 29, 29) 11.2%,
+    rgb(36, 162, 190) 91.1%
+  );
+  animation: gradientAnimation 9s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background: linear-gradient(to right, #247881, #252323);
+  }
+  50% {
+    background: linear-gradient(to right, #676161, #e4d0d0);
+  }
+  100% {
+    background: linear-gradient(to right, #373535, #6edcd9);
+  }
 }
 
 .App2 {
   margin-top: 4rem;
   margin-bottom: 4rem;
   background-color: rgba(245, 245, 245, 0.632);
-  max-width: 550px;
+  max-width: 500px;
   height: 100%;
   border-radius: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
